@@ -1,0 +1,139 @@
+<!DOCTYPEhtml>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link href='styles.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet'>
+    <metaset UTF-8></metaset>
+</head>
+
+<body>
+    <h1 id='title'>Survey Form</h1>
+    <div id='form-content'>
+        <p id='description'>How Can We Serve You Better</p>
+        <form id='survey-form'>
+            <div class='rowTab'>
+                <div class='labels'>
+                    <label for='name' id="name-label"> *Name:</label>
+                </div>
+                <div class='rightTab'>
+                    <input autofocus type='text' id="name" class='input-field' placeholder="Enter your name" required><br>
+                </div>
+            </div>
+            <div class='rowTab'>
+                <div class='labels'>
+                    <label for='email' id="email-label">*Email:</label>
+                </div>
+                <div class='rightTab'>
+                    <input type='email' id="email" class='input-field' placeholder="Enter your email" required><br>
+                </div>
+            </div>
+            <div class='rowTab'>
+                <div class='labels'>
+                    <label for='number' id='number-label'> *Age:</label>
+                </div>
+                <div class='rightTab'>
+                    <input type='number' id='number' class='input-field' min="0" max="70" placeholder="Age"><br>
+                </div>
+            </div>
+            <div class='rowTab'>
+                <div class='labels'>
+                    <label for='currentPos' id='currentPos'>
+                        *Which option best describes your current role?
+                    </label>
+                </div>
+                <div class='rightTab'>
+                    <select id='dropdown' class='dropdown'>
+                    <option disabled  selected value = 'select an option'>Select an Option</option>
+                    <option value = 'Student'>Student</option>
+                    <option value = 'Employed'>Employed</option>
+                    <option value = 'freelancer'>Freelancer</option>
+                    <option value = 'other'>Other</option>
+                </select>
+                </div>
+            </div>
+            <div class='rowTab'>
+                <div class='labels'>
+                    <label for='userRating'> How likely is that you would recommend Stillwaters to a friend?</label>
+                </div>
+                <div class='rightTab'>
+                    <ul style='list-style: none'>
+                        <li class="radio">
+                            <label>
+                                Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" >
+                            </label>
+                        </li>
+                        <li class='radio'>
+                            <label>
+                                Maybe<input name = 'radio-buttons' value = '1' type = 'radio' class = 'userRatings'>
+                            </label>
+                        </li>
+                        <li class='radio'>
+                            <label>
+                                Not sure<input name = 'radio-buttons' value = '1' type = 'radio' class = 'userRatings'>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class='rowTab'>
+                <div class='labels'>
+                    What do you like most in Stillwaters:
+                </div>
+                <div class='rightTab'>
+                    <select id='dropdown' class='dropdown'>
+                        <option disabled  selected value = 'select an option'>Select an option</option>
+                        <option value = 'Service'>Service</option>
+                        <option value = 'People'>People</option>
+                        <option value = 'Food'>Food</option>
+                    </select>
+                </div>
+            </div>
+            <div class='rowtab'>
+                <div class='labels'>
+                    Things that should be improved in the future.<br> (Check all that apply):
+                </div>
+                <div class='rightTab'>
+                    <ul style='list-style: none'>
+                        <li class='checkbox'>
+                            <label><input type='checkbox' name='prefer' value='1' class='userRatings'>Front-end Projects</label>
+                        </li>
+                        <li class='checkbox'>
+                            <label><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end Projects</label>
+                        </li>
+                        <li class='checkbox'>
+                            <label><input name="prefer" value="3" type="checkbox" class="userRatings">Challenges</label>
+                        </li>
+                        <li class='checkbox'>
+                            <label><input name="prefer" value="4" type="checkbox" class="userRatings">Videos</label>
+                        </li>
+                        <li class='checkbox'>
+                            <label><input name="prefer" value="5" type="checkbox" class="userRatings">Open Source Contribution</label>
+                        </li>
+                        <li class='checkbox'>
+                            <label><input name="prefer" value="6" type="checkbox" class="userRatings">Code Interview Prep</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class='rowTab'>
+                <div class='labels'>
+                    Any Comments or Suggestions?
+                </div>
+                <div class='rightTab'>
+                    <textarea class='input-field' name='comment' placeholder='Enter your comment here... '>
+                </textarea>
+                </div>
+            </div>
+            <button id='submit' class='submit'>Submit</button>
+        </form>
+    </div>
+    <div class='footer'>
+        <p>Powered by nb@p trixandra</p>
+    </div>
+
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+</body>
+
+</html>
